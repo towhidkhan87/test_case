@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+import CV from '../../public/Towhid_CV.pdf'
 
 const Hero = () => {
     return (
@@ -23,11 +25,11 @@ const Hero = () => {
                 </div>
                 <div className="flex justify-center lg:justify-start items-center gap-5 py-5">
                     <button
-                        className="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Hire
-                        Me</button>
+                        className="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold"><Link to={'/contact'}>Hire
+                            Me</Link></button>
                     <button
-                        className="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Download
-                        CV</button>
+                        className="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">
+                            <a href={CV} download='CV'>Download CV</a></button>
                 </div>
             </div>
             <div class="slide-up-lg">

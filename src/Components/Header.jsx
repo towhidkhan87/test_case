@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     
+    
     return (
         <div>
             <div className="w-full bg-white z-50 shadow-xl border-gray-300 ">
@@ -11,9 +12,10 @@ const Header = () => {
                     <img className='w-20 h-20 rounded-full' src="/Towhid.png" />
                     <div className="flex justify-between items-center gap-5 lg:gap-20 py-5">
                         <nav className="hidden lg:flex gap-20">
-                            <p className="hover:text-red-500 cursor-pointer"><Link to={'/'}>Home</Link></p>
+                            <p className="hover:text-red-500 cursor-pointer"><Link to={'/home'}>Home</Link></p>
                             <p className="hover:text-red-500 cursor-pointer"><Link to={'/about'}>About Me</Link></p>
                             <p className="hover:text-red-500 cursor-pointer"><Link to={'/portfolio'}>Portfolio</Link></p>
+                            <p className="hover:text-red-500 cursor-pointer"><Link to={'/services'}>Services</Link></p>
                             <p className="hover:text-red-500 cursor-pointer"><Link to={'/contact'}>Contact</Link></p>
                         </nav>
                         <button
