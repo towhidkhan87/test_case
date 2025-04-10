@@ -4,11 +4,10 @@ import {Link} from 'react-router-dom'
 const Singleservice = ({ service }) => {
     return (
         <div>
-            <div>
+            <div className="w-11/12 mx-auto py-5 lg:w-9/12">
                 <div className="card bg-base-100 w-96 shadow-lg">
                     <figure>
-                        <img
-                            src={service.image}/>
+                        <img className='h-72 w-full' alt="Shoes" src={service.image}/>
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">

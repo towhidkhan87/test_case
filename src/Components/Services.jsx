@@ -10,7 +10,7 @@ const Services = () => {
     },[])
     return (
         <div>
-            <div className='grid grid-cols-3 justify-between items-center mx-auto w-10/12 mt-10 gap-6'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 justify-between items-center mx-auto w-10/12 mt-10 gap-6'>
                 {
                     services.map(service=> <Singleservice service={service}></Singleservice>)
                 }
